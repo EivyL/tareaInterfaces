@@ -1,5 +1,5 @@
 
-import pckControladores.usuariosController;
+import pckControladores.ingresoController;
 import pckModelos.ingresoModelo;
 import pckVistas.frmPrincipal;
 import pckVistas.frmIngreso;
@@ -13,7 +13,7 @@ public class main {
         ingresoModelo ModeloIngresos = new ingresoModelo();
         
         
-        usuariosController ControladorUsuarios = new usuariosController(VistaPrincipal,
+        ingresoController ControladorUsuarios = new ingresoController(VistaPrincipal,
                 VistaUsuarios,ModeloIngresos);
         
 
