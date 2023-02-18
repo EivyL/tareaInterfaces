@@ -1,26 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pckModelos;
 
-/**
- *
- * @author umg
- */
-class Usuarios {
+public class Ingreso {
     
     String marca;
     String modelo;
     String tipo;
-    String problem;
+    String problema;
 
-    public Usuarios(String marca, String modelo, String tipo, String problem) {
+    public Ingreso(String marca, String modelo, String tipo, String problema) {
         this.marca = marca;
         this.modelo = modelo;
         this.tipo = tipo;
-        this.problem = problem;
+        this.problema = problema;
     }
 
     public String getMarca() {
@@ -47,15 +39,13 @@ class Usuarios {
         this.tipo = tipo;
     }
 
-    public String getProblem() {
-        return problem;
+    public String getProblema() {
+        return problema;
     }
 
-    public void setProblem(String problem) {
-        this.problem = problem;
+    public void setProblema(String problema) {
+        this.problema = problema;
     }
-    
-    
-            
-    
+
+
 }

@@ -34,7 +34,7 @@ public class frmIngreso extends javax.swing.JDialog {
         txtMarca = new javax.swing.JTextField();
         txtModelo = new javax.swing.JTextField();
         txtTipo = new javax.swing.JTextField();
-        btnInsertar = new javax.swing.JButton();
+        btnIngresoCom = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtUsuarios = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
@@ -68,10 +68,10 @@ public class frmIngreso extends javax.swing.JDialog {
             }
         });
 
-        btnInsertar.setText("INSERTAR USUARIO");
-        btnInsertar.addActionListener(new java.awt.event.ActionListener() {
+        btnIngresoCom.setText("INSERTAR USUARIO");
+        btnIngresoCom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInsertarActionPerformed(evt);
+                btnIngresoComActionPerformed(evt);
             }
         });
 
@@ -120,7 +120,7 @@ public class frmIngreso extends javax.swing.JDialog {
                             .addComponent(txtTipo)
                             .addComponent(txtProblema))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
-                        .addComponent(btnInsertar)
+                        .addComponent(btnIngresoCom)
                         .addGap(42, 42, 42))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,7 +155,7 @@ public class frmIngreso extends javax.swing.JDialog {
                             .addComponent(txtTipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(5, 5, 5)
-                        .addComponent(btnInsertar)))
+                        .addComponent(btnIngresoCom)))
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -176,9 +176,9 @@ public class frmIngreso extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTipoActionPerformed
 
-    private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
+    private void btnIngresoComActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresoComActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnInsertarActionPerformed
+    }//GEN-LAST:event_btnIngresoComActionPerformed
 
     private void txtModeloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtModeloActionPerformed
         // TODO add your handling code here:
@@ -234,11 +234,11 @@ public class frmIngreso extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInsertar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    public javax.swing.JButton btnIngresoCom;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JLabel jblTitulo;

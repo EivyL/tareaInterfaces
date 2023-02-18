@@ -1,11 +1,23 @@
 
-public class main {
+import pckControladores.usuariosController;
+import pckModelos.ingresoModelo;
+import pckVistas.frmPrincipal;
+import pckVistas.frmIngreso;
 
-    /**
-     * @param args the command line arguments
-     */
+public class main {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        frmPrincipal VistaPrincipal = new frmPrincipal();
+        frmIngreso VistaUsuarios = new frmIngreso(VistaPrincipal,true);
+        ingresoModelo ModeloIngresos = new ingresoModelo();
+        
+        
+        usuariosController ControladorUsuarios = new usuariosController(VistaPrincipal,
+                VistaUsuarios,ModeloIngresos);
+        
+
+        
     }
     
 }
