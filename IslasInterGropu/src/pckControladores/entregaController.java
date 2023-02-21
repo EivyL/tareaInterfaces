@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package pckControladores;
 
 import java.awt.event.ActionEvent;
@@ -17,14 +14,14 @@ import pckVistas.frmPrincipal;
  */
 public class entregaController implements ActionListener{
     frmPrincipal VistaPrincipal;
-    frmEntrega VistaUsuarios;
+    frmEntrega VistaEntrega;
     entregaModel ModeloEntrega;
     public DefaultTableModel TablaEntrega = new DefaultTableModel();
     
     public entregaController(frmPrincipal VistaPrincipal, frmEntrega VistaUsuarios,entregaModel ModeloEntrega)
     {
         this.VistaPrincipal = VistaPrincipal;
-        this.VistaUsuarios = VistaUsuarios;
+        this.VistaEntrega = VistaUsuarios;
         this.ModeloEntrega = ModeloEntrega;
      
      //PONER A LA ESCUCHA LOS BOTONES CORRESPONDIENTES
@@ -40,7 +37,7 @@ public class entregaController implements ActionListener{
         this.TablaEntrega.addColumn("FECHA");
         this.TablaEntrega.addColumn("DESCRIPCIÓN");
      
-     this.VistaUsuarios.jtEntrega.setModel(TablaEntrega);
+     this.VistaEntrega.jtEntrega.setModel(TablaEntrega);
     }
 
     @Override
@@ -49,18 +46,18 @@ public class entregaController implements ActionListener{
        if(e.getSource()==this.VistaPrincipal.btnEntrega)
        {
        //PONER A LA ESCUCHA LOS BOTONES DE LA VISTA USUARIOS
-        this.VistaUsuarios.btnEntregarEquipo.addActionListener(this);
+        this.VistaEntrega.btnEntregarEquipo.addActionListener(this);
         
         //LEVANTAR LA VISTA USUARIOS
-        this.VistaUsuarios.setLocationRelativeTo(null);
-        this.VistaUsuarios.setVisible(true);   
+        this.VistaEntrega.setLocationRelativeTo(null);
+        this.VistaEntrega.setVisible(true);   
        } 
        
-       if(e.getSource()==this.VistaUsuarios.btnEntregarEquipo)
+       if(e.getSource()==this.VistaEntrega.btnEntregarEquipo)
        {
-           this.ModeloEntrega.AgregarEnvio(this.VistaUsuarios.txtCodigo.getText(), 
-                   this.VistaUsuarios.txtNombre.getText(), this.VistaUsuarios.txtFecha.getText(), 
-                   this.VistaUsuarios.txtDescripcion.getText());
+           this.ModeloEntrega.AgregarEnvio(this.VistaEntrega.txtCodigo.getText(), 
+                   this.VistaEntrega.txtNombre.getText(), this.VistaEntrega.txtFecha.getText(), 
+                   this.VistaEntrega.txtDescripcion.getText());
            
            this.TablaEntrega.addRow(new Object[]{
                this.ModeloEntrega.ListaEntrega.get(0).getCodigo(),

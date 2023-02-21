@@ -8,34 +8,25 @@ import pckVistas.frmPrincipal;
 import pckVistas.frmIngreso;
 
 public class main {
-    
-    /**
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
+
+    public static void main(String[] args) 
+    {
         
         frmPrincipal VistaPrincipal = new frmPrincipal();
         frmIngreso VistaUsuarios = new frmIngreso(VistaPrincipal,true);
         ingresoModelo ModeloIngresos = new ingresoModelo();
         
+
+        frmEntrega VistaEntrega = new frmEntrega(VistaPrincipal,true);
+        entregaModel ModeloEntrega = new entregaModel();
         
-        ingresoController ControladorUsuarios = new ingresoController(VistaPrincipal,
-                VistaUsuarios,ModeloIngresos);     
         
+        ingresoController ControladorIngresos = new ingresoController(VistaPrincipal,
+        VistaUsuarios,ModeloIngresos);    
         
-    }
-    
-    public void entrega(String[] args)
-    {
-    
-    frmPrincipal VistaPrincipal = new frmPrincipal();
-    frmEntrega VistaUsuarios = new frmEntrega(VistaPrincipal,true);
-    entregaModel ModeloEntrega = new entregaModel();
-    
-    entregaController ControladorUsuarios = new entregaController(VistaPrincipal,
-    VistaUsuarios,ModeloEntrega);
-    }
+        entregaController ControladorUsuarios = new entregaController(VistaPrincipal,
+        VistaEntrega,ModeloEntrega);
+    } 
 }
 
 
