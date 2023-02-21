@@ -30,7 +30,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnIngreso = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         btnEnviarReparacion = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnEntrega = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,7 +48,12 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnEnviarReparacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pckVistas/reparar.png"))); // NOI18N
         btnEnviarReparacion.setText("Enviar a reparacion");
 
-        jButton4.setText("jButton3");
+        btnEntrega.setText("Entrega de equipo");
+        btnEntrega.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntregaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -56,7 +61,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEnviarReparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
@@ -77,7 +82,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnEnviarReparacion, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
@@ -87,6 +92,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void btnIngresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIngresoActionPerformed
+
+    private void btnEntregaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntregaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEntregaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,9 +133,9 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnEntrega;
     public javax.swing.JButton btnEnviarReparacion;
     public javax.swing.JButton btnIngreso;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     // End of variables declaration//GEN-END:variables
 }

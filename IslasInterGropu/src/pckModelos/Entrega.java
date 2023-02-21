@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pckModelos;
 
-/**
- *
- * @author umg
- */
 public class Entrega {
  String codigo;
  String nombre;
  String fecha;
  String descripcion;
 
-    public Entrega(String codigo, String nombre, String fecha, String descripcion) {
+    public  Entrega(String codigo, String nombre, String fecha, String descripcion) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.fecha = fecha;

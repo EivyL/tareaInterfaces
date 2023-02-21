@@ -225,7 +225,7 @@ public class frmEntrega extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnEntregarEquipo;
+    public javax.swing.JButton btnEntregarEquipo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -233,9 +233,9 @@ public class frmEntrega extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtEntrega;
-    private javax.swing.JTextField txtCodigo;
-    private javax.swing.JTextField txtDescripcion;
-    private javax.swing.JTextField txtFecha;
-    private javax.swing.JTextField txtNombre;
+    public javax.swing.JTextField txtCodigo;
+    public javax.swing.JTextField txtDescripcion;
+    public javax.swing.JTextField txtFecha;
+    public javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
