@@ -11,18 +11,17 @@ public class main {
 
     public static void main(String[] args) 
     {
-        
+        //Rony de León
         frmPrincipal VistaPrincipal = new frmPrincipal();
         frmIngreso VistaUsuarios = new frmIngreso(VistaPrincipal,true);
         ingresoModelo ModeloIngresos = new ingresoModelo();
         
-
-        frmEntrega VistaEntrega = new frmEntrega(VistaPrincipal,true);
-        entregaModel ModeloEntrega = new entregaModel();
-        
-        
         ingresoController ControladorIngresos = new ingresoController(VistaPrincipal,
         VistaUsuarios,ModeloIngresos);    
+        
+        //Rodrigo Velasquez
+        frmEntrega VistaEntrega = new frmEntrega(VistaPrincipal,true);
+        entregaModel ModeloEntrega = new entregaModel();
         
         entregaController ControladorUsuarios = new entregaController(VistaPrincipal,
         VistaEntrega,ModeloEntrega);
